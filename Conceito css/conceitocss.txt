@@ -34,22 +34,28 @@ Na prática usamos o valor inline-block quando queremos definir um valor para a 
 
 Para deixar as caixinhas lado a lado, formando linhas, e conseguir controlar o padding e a margem entre elas, usamos a propriedade display com o valor inline-block.
 
-
+-----------------------------------------------------------------------------------
 A medida rem
+O tamanho de fonte do elemento html ou, se não houver tamanho de fonte definido neste elemento, o tamanho de fonte padrão do navegador.
+O valor da medida rem é referente ao tamanho de fonte base da pagina, que normalmente é o tamanho de fonte padrão do navegador, mas que pode ser alterado usando a propriedade font-size do elemento html
 Podemos aplicar as porcentagens em todos os elementos, mas sempre lembrando que para alguns ela está relacionada à largura do elemento pai. Isto pode causar alguma confusão, uma vez que teríamos que aplicar uma porcentagem em cima de outra, no caso do padding.
 Utilizaremos, então, uma nova medida que usa o tamanho da fonte como base, o rem:
 1,25 rem = 1,25 x tamanho da fonte
 Por exemplo, se a fonte do navegador for de 20px, temos:
 20px x 1,25 = 25px
 O rem é uma medida muito boa para quando quisermos que os elementos sigam o padrão do texto principal.
+No exemplo abaixo, 1rem vale 25px:
+html {
+    font-size: 25px;
+}
 
-A medida ch
-Voltando ao blockquote, temos que seus elementos filhos são baseados na sua largura. Então não faz sentido utilizar o rem aqui, uma vez que este é baseado na altura da fonte.
-Então vamos utilizar uma medida que facilita principalmente na edição de textos dentro de caixas, a medida ch:
-1 ch = largura do caractere "zero" da fonte utilizada
-Modificando o tamanho da fonte do navegador, esta medida também modifica-se. Essa medida é boa porque não importa muito a fonte que você está utilizando, ela se adequará muito bem.
+p {
+    margin: 1rem;
+}
 
+-----------------------------------------------------------------------------------
 A medida em
+O valor da medida em é o tamanho de fonte do elemento no qual for usada.
 Para isso, utilizamos a medida em que indica o tamanho da fonte do elemento, não do navegador como é o caso do rem.
 Claro que se aumentarmos a fonte do navegador, como todos os elementos estão ligados a ela, o quote block e seus elementos irão ficar ainda maiores.
 
@@ -59,3 +65,18 @@ rem: tem como padrão a fonte do navegador;
 em: tem como padrão a fonte do elemento pai;
 ch: tem como base a largura do caractere zero da fonte usada;
 
+Temos duas medidas que são relativas ao tamanho de fonte: em e rem. Quais as diferenças entre elas e quando usar uma e quando usar outra?
+O tamanho rem possui um valor único para a página inteira, já a medida em varia de acordo com o elemento em que é utilizada.
+Nesta alternativa, explica a diferença entre as duas medidas. É interessante usarmos em quando queremos que a mudança de tamanho se propague pela página
+
+-----------------------------------------------------------------------------------
+A medida ch
+O valor da medida ch largura do caractere "zero" da fonte utilizada
+Voltando ao blockquote, temos que seus elementos filhos são baseados na sua largura. Então não faz sentido utilizar o rem aqui, uma vez que este é baseado na altura da fonte.
+Então vamos utilizar uma medida que facilita principalmente na edição de textos dentro de caixas, a medida ch:
+1 ch = largura do caractere "zero" da fonte utilizada
+Modificando o tamanho da fonte do navegador, esta medida também modifica-se. Essa medida é boa porque não importa muito a fonte que você está utilizando, ela se adequará muito bem.
+
+-----------------------------------------------------------------------------------
+A medida porcentagem é relativa a que outra medida?
+Dependendo do contexto, pode ser à largura, à altura ou ao tamanho de fonte do pai do elemento.
