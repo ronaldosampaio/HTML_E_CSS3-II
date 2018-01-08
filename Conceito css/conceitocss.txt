@@ -6,10 +6,16 @@ box-sizing: border-box; Quando você define em um elemento, os valores do paddin
 
 position: absolute; posição do elemento fica acima de qualquer texto e imagem.
 O absolute coloca um elemento em qualquer parte da página, mas o elemento é afetado pela rolagem da página.
+O absolute é sempre relativo ao primeiro pai que estiver um position definido se não tiver ninguem ai sim é pela tela do navegador
 
 position: static; O valor que faz com que um elemento fique na mesma posição independente da rolagem da página é o fixed.
 
 position: relative; O position relative posiciona o elemento em relação a si mesmo. Ou seja, o ponto zero será o canto superior esquerdo, e ele começará a contar a partir dali.
+Obs:O position absolute, na verdade, não é sempre relativo à página. Ele é relativo ao primeiro pai que possui um position definido:
+<html> <- referência 
+<body> <- position:relative/absolute/fixed referência
+<div>
+<div> <- position:absolute;
 
 position: fixed; irá fixar a posição do elemento na coordenada que você definir. A medida que a página é rolada, o elemento continua fixo na posição que você definiu e o conteúdo da página rola normalmente.
 Geralmente é usado para fixar elementos como cabeçalhos ou sidebars.
@@ -80,3 +86,23 @@ Modificando o tamanho da fonte do navegador, esta medida também modifica-se. Es
 -----------------------------------------------------------------------------------
 A medida porcentagem é relativa a que outra medida?
 Dependendo do contexto, pode ser à largura, à altura ou ao tamanho de fonte do pai do elemento.
+-----------------------------------------------------------------------------------
+
+Border-radius
+Google Chrome: -webkit-
+Mozilla Firefox: -moz-
+Internet Explorer: -ms-
+Opera: -o-
+Safari: -webkit-
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+border-radius: 10px;
+
+border-radius: <raios na horizontal> / <raios na vertical>;
+É como se tivéssemos feito:
+Na verdade, quando declaramos
+border-radius: 50%;
+border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+

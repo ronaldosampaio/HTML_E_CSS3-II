@@ -1,0 +1,64 @@
+
+/* 
+    Posicionamento dos elementos1 
+h2{
+	position:absolute;
+	top: 0;
+	background-color: aqua;
+}
+ul{
+	position:relative;
+	
+}
+
+*/
+
+
+/* Posicionamento dos elementos2 
+ Aparecerá no topo da <ul>, sobrepostos.
+Qualquer valor que colocarmos no position do ul (exceto static) fará com que o <ul> se torne referência.
+
+h2{
+    position: absolute;
+	top: 0;
+}
+
+ul{
+	position: absolute;
+	
+}
+*/
+
+/* Posicionamento dos elementos3
+    
+Aparecerá no topo de cada li
+
+h2{
+	position: absolute;
+	top: 0;	
+}
+li{
+	position: relative;
+	
+}
+*/
+
+/* Posicionamento dos elementos4
+Aparecera no topo da janela sobreposto */
+
+h2{
+	position: absolute;
+	top: 0;	
+}
+li{
+	position: static;
+}
+
+
+
+
+
+
+
+
+

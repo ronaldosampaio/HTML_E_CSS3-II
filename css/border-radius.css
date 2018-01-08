@@ -1,0 +1,36 @@
+/*
+Google Chrome: -webkit-
+Mozilla Firefox: -moz-
+Internet Explorer: -ms-
+Opera: -o-
+Safari: -webkit-
+
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+border-radius: 10px;
+
+transform: rotate(30deg); roda em 30 graus
+transform: scale(1.5); aumenta de tamanho
+transform: skew(20deg); entortar a caixinha com a propriedade skew em graus
+transform: translate(10px, 50px); Deslocar a caixinha colocar em qualquer lugar
+
+*/
+.arredondar{
+		
+	width: 150px;
+	height: 150px;
+	border-radius:50%;
+	background-color: aqua;
+	
+}
+.transformar{
+	top: 00px;
+	width: 150px;
+	height: 150px;
+	background-color: aqua;
+	transform: translate(10px, 50px);
+	
+	
+}
