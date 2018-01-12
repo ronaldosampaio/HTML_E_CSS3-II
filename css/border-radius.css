@@ -14,10 +14,18 @@ border-radius: 10px;
 transform: rotate(30deg); roda em 30 graus
 transform: scale(1.5); aumenta de tamanho
 transform: skew(20deg); entortar a caixinha com a propriedade skew em graus
+display: inline-block; para fazer funcionar
+
+Aqui o objeto foi transladado 10 pixeis para a direita e 50 para baixo:
 transform: translate(10px, 50px); Deslocar a caixinha colocar em qualquer lugar
 
 */
-.arredondar{
+
+body{
+	background-color: royalblue;
+	
+}
+.border{
 		
 	width: 150px;
 	height: 150px;
@@ -25,12 +33,67 @@ transform: translate(10px, 50px); Deslocar a caixinha colocar em qualquer lugar
 	background-color: aqua;
 	
 }
-.transformar{
+.transform{
 	top: 00px;
 	width: 150px;
 	height: 150px;
 	background-color: aqua;
-	transform: translate(10px, 50px);
-	
-	
+	transform: skew(20deg);
+	           rotate(30deg);
+	           scale(1.2);
 }
+
+.rotativo{
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	transform: scale(1.5) rotate(40deg) translateX(000px);
+}
+
+.face {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.frente {
+  background-color: red;
+  transform: translateZ(100px);
+}
+.direita {
+  background-color: blue;
+  transform: translateX(104px) rotateY(90deg);
+}
+.esquerda {
+  background-color: green;
+  transform: translateX(-100px) rotateY(-90deg);
+}
+.cima {
+  background-color: yellow;
+  transform: translateY(100px) rotateX(90deg);
+}
+
+.baixo {
+  background-color: magenta;
+  transform: translateY(-100px) rotateX(-90deg);
+}
+
+.tras {
+  background-color: cyan;
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.cubo {
+  transform-style: preserve-3d;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  transform: rotateX(10deg) rotateY(10deg);
+}
+
+
+

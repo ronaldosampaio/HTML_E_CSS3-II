@@ -1,0 +1,53 @@
+body{
+	background-color: cornflowerblue;
+}
+.bordas-sombras-um{
+	margin: 50px;
+	padding: 20px;
+	
+	width: 400px;
+	height: 400px;
+	color:aliceblue;
+	
+	box-shadow: 0 0 0 4px black,
+            0 0 0 8px transparent;
+}
+
+.bordas-sombras-dois{
+	margin: 50px;
+	padding: 20px;
+	width: 400px;
+	height: 400px;
+	color:aliceblue;
+	
+	box-shadow: 0 0 0 4px black,
+            0 0 0 8px transparent,
+            0 0 0 12px black;
+}
+.bordas-sombras-tres{
+	margin: 50px;
+	padding: 20px;
+	width: 400px;
+	height: 400px;
+	color:aliceblue;
+	
+	
+	box-shadow: 0 0 0 4px black,
+            0 0 0 8px blue,
+            0 0 0 12px black;
+	
+}
+.bordas-sombras-quatro{
+	margin: 50px;
+	padding: 20px;
+	width: 400px;
+	height: 400px;
+	color:aliceblue;
+	
+	
+	box-shadow: 0 0 0 4px black,
+            0 0 0 8px blue,
+            0 0 0 12px black,
+            0 0 0 16px blue,
+            0 0 0 20px black;
+}

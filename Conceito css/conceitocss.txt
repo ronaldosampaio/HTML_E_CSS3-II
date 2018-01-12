@@ -105,4 +105,28 @@ border-radius: <raios na horizontal> / <raios na vertical>;
 Na verdade, quando declaramos
 border-radius: 50%;
 border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+------------------------------------------------------------------------------------
+transform
+transform: rotate(30deg); roda em 30 graus
+transform: scale(1.5); aumenta de tamanho
+transform: skew(20deg); entortar a caixinha com a propriedade skew em graus (gira em graus)
+display: inline-block; para fazer funcionar
+
+Aqui o objeto foi transladado 10 pixeis para a direita e 50 para baixo:
+transform: translate(10px, 50px); Deslocar a caixinha colocar em qualquer lugar
+
+Qual a função da declaração transform-style: preserve-3d
+ -> Para os elementos de dentro de um container numa cena 3D também entrarem no cálculo da perspectiva.
+ ----------------------------------------------------------------------------------
+ Sombreamento:
+ Coloca sombras em texto e elementos da pagina também
+ text-shadow: 2px 2px #000; -> sombra no texto
+ text-shadow: 2px 2px #000; -> O primeiro 2px indica que a sobra é levemente deslocada para a direita e o segundo indica que ela é deslocada para baixo.
+ box-shadow: 0 0 1em #000; -> sombra na imagem
+ box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF -> sombra fora e usando inset fica outra sombra dentro
+ 
+ opacity: .8; - Transparencia/visibilidade/invisibilidade
+ Sua escala vai de 0 a 1, sendo 0 totalmente invisível e 1 totalmente visível.
+ Como queremos o elemento semitransparente, e não apenas uma parte dele (o fundo, o texto, a borda etc), usamos a propriedade opacity, que recebe valores de 0 (totalmente transparente) a 1 (totalmente opaco. Assim, a declaração mais correta seria
+
 
