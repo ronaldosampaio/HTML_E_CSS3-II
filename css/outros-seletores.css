@@ -1,0 +1,33 @@
+div ul li ~ li{
+	background-color: red;
+}
+
+img p{
+	background-color:blue;
+}
+
+/*
+div p ~ p{
+	background-color: yellow;
+}
+*/ 
+/*
+div h1 + h1{
+	background-color: aqua;
+}
+h1 + p {
+	background-color: aqua;
+}
+
+h2 ~ p{
+	background-color: blue;
+}
+*/
+ul > li{
+	
+	background-color: yellow;
+}
+article > h1 + p{
+	
+	background-color: red;
+}

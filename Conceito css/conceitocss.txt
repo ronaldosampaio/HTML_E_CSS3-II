@@ -128,5 +128,30 @@ Qual a função da declaração transform-style: preserve-3d
  opacity: .8; - Transparencia/visibilidade/invisibilidade
  Sua escala vai de 0 a 1, sendo 0 totalmente invisível e 1 totalmente visível.
  Como queremos o elemento semitransparente, e não apenas uma parte dele (o fundo, o texto, a borda etc), usamos a propriedade opacity, que recebe valores de 0 (totalmente transparente) a 1 (totalmente opaco. Assim, a declaração mais correta seria
+------------------------------------------------------------------------------------
+Gradientes (efeitos)
+Hoje em dia o próprio navegador cria esses efeitos visuais utilizando a propriedade background-image, só que, ao invés de colocar o caminho para uma imagem, nós vamos colocar uma instrução para criar um gradiente.
+Por padrão ocupa o elemento inteiro
+background-image: linear-gradient(to bottom, #F00, #888 80%, #000); -> efeito de uma iluminação, controla a posição das cores em 80% abaixo
+O "to bottom" indica que o gradiente acontece de cima para baixo. Logo depois escolhemos as cores dos gradientes, neste caso do vermelho (#F00) ao preto (#000).
+background-size: 100% 200px;
+background-attachment: fixed; ->parece que ele fica passeando para o fundo do elemento
+background-repeat: no-repeat;
+-------------------------------------------------------------------------------------
+Conhecendo outros seletores do css
+~:significa pegar depois irmão ~ irmão
++:significa pegar logo depois apenas o segundo irmão + irmão seguinte
+>:significa pegar pai e filho pai > filho
+
+<img>
+<div>
+    <p>...</p>
+	<p>...</p>
+	<p>...</p>
+</div>
+img ~ div = dentro da div pega todos os paragrafos pai
+	
+
+
 
 
