@@ -1,0 +1,15 @@
+body{
+	margin: 10px;
+	border: 2px solid black;
+	padding: 5px;
+	color:blue
+}
+div{
+	text-align: center;
+	padding: 1px;
+	margin: 6px;
+	border: 1px solid black;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
